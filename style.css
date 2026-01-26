@@ -1,0 +1,12 @@
+body {
+    background-color: black;
+    color: white;
+}
+.box1 {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color:white;
+    background: black;
+    border: solid 3px white;
+    border-radius: 10px;
+}
