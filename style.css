@@ -1,12 +1,73 @@
+:root {
+    --darkcyan: #0d2c41;
+}
 body {
+    font-family:sans-serif;
     background-color: black;
     color: white;
 }
 .box1 {
     padding: 0.5em 1em;
-    margin: 2em 0;
+    margin: 2em 0.2em;
     color:white;
-    background: black;
+    /* background-color: #113a57; */
     border: solid 3px white;
     border-radius: 10px;
+}
+.btn1 {
+    padding: 0.2em 0.5em;
+    margin: 0.5em 0.5em;
+    color:white;
+    background-color: black;
+    border: solid 3px #197ec6;
+}
+.btn1:hover {
+    color: black;
+    background-color: #197ec6;
+}
+.btn2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0.5em 0.5em;
+    width: 64px;
+    height: 64px;
+    margin: 0 auto;
+    border-radius: 100%;
+    color:white;
+    background-color: black;
+    border: solid 3px #197ec6;
+    aspect-ratio: 1;
+}
+.btn2:hover {
+    color: black;
+    background-color: #197ec6;
+}
+.notification {
+    padding: 0.2em 0.5em;
+    margin: 0.3em 0.5em;
+    color:white;
+    background-color: black;
+    border: solid 3px #113a57;
+    opacity: 1;
+    transition-duration: 500ms;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+.notification.remove {
+    transform: translateX(120%);
+    opacity: 0;
+}
+.notification-field {
+    pointer-events: none;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items:end;
+    justify-content: flex-start;
+    flex-direction: column-reverse;
+}
+.notification-field > *{
+    pointer-events: auto;
 }

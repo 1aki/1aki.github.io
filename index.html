@@ -1,18 +1,45 @@
 <!DOCTYPE html>
 <head>
-    <title>AKI's github</title>
+    <title>AKI24957's github</title>
+    <link rel="icon" ref="./images/favicon.ico">
     <meta lang="ja" charset="utf8">
     <link rel="stylesheet" href="./style.css">
+    <script lang="Javascript" src="./script.js"></script>
 </head>
 <body>
-    <div class="box1" style="text-align: center;display: flex;align-items:center;">
-        <img src="./icon.png" style="border: 0.1em solid white;border-radius: 20%;width: 180px;height: 180px;">
-        <div style="display:block;text-align: left;margin-left: 1em;line-height: 0.7;">
-            <p style="font-weight: bold;font-size:xx-large;">AKI</p>
-            <p>2011</p>
-            <p>🇯🇵 JPN</p>
-            <p>どこにでもいる暇人</p>
-            <p>Python,Javascript,C++</p>
+    <div id="notification" class="notification-field"></div>
+    <div style="display: flex;align-items: center;justify-content: center;height: 100%;width: 100%;">
+        <div class="box1" style="display: block;align-items:center;">
+            <div style="display: flex;">
+                <img src="./images/icon.png" style="border-radius: 20%;width: 180px;height: 180px;">
+                <div style="display:block;text-align: left;margin-left: 1em;line-height: 0.7;">
+                    <h1>AKI24957</h1>
+                    <p>2011</p>
+                    <p>🇯🇵 JPN</p>
+                    <p>どこにでもいる暇人</p>
+                    <p>Python,Javascript,C++</p>
+                </div>
+            </div>
+            <div style="display: flex;margin-top: 0.5em;">
+                <button type="button" class="btn2" onclick="copytext('aki24957')" title="Discord | Copy Username(aki24957)">
+                    <img src="./images/discordicon.png" style="width: 48px;">
+                </button>
+                <button type="button" class="btn2" onclick="openurl('www.youtube.com/@AKI24957')" title="Youtube">
+                    <img src="./images/youtubeicon.png" style="width: 48px;">
+                </button>
+                <button type="button" class="btn2" onclick="openurl('x.com/AKI24957')" title="X">
+                    <img src="./images/xicon.png" style="height: 38px;">
+                </button>
+                <button type="button" class="btn2" onclick="openurl('github.com/1aki')" title="Github">
+                    <img src="./images/githubicon.svg" style="width: 48px;">
+                </button>
+                <button type="button" class="btn2" onclick="openurl('atcoder.jp/users/AKI24957')" title="AtCoder">
+                    <img src="./images/atcodericon.svg" style="width: 48px;">
+                </button>
+                <button type="button" class="btn2" onclick="openurl('scratch.mit.edu/users/1aki')" title="Scratch">
+                    <img src="./images/scratchicon.svg" style="height: 48px;">
+                </button>
+            </div>
         </div>
     </div>
 </body>
